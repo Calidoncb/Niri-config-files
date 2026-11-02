@@ -1,0 +1,45 @@
+include "./cfg/animation.kdl"
+include "./cfg/autostart.kdl"
+include "./cfg/keybinds.kdl"
+include "./cfg/input.kdl"
+include "./cfg/display.kdl"
+include "./cfg/layout.kdl"
+include "./cfg/rules.kdl"
+include "./cfg/misc.kdl"
+
+//tem uma porra chamada transform, que rotaciona em graus (círculo trigonométrico mano)
+input{
+  mouse{
+accel-profile "flat"
+accel-speed 0.0
+}
+}
+output "eDP-1"{
+//define resolução e taxa de atualização:
+mode "1366x768@60.003"
+//Escala: 1 pra 100%, 2 pra 200% e etc
+scale 1.0
+//Posição em relação ao marco zero (plano cartesiano)
+position x=0 y=0
+//transform caralho:
+transform "normal"
+}
+output "HDMI-A-1"{
+mode "1024x768@75.029"
+scale 1.0
+position x=-1024 y=0
+transform "normal"
+}
+// binds mano
+binds {
+//Define bind pra fechar um app
+mod+backspace { close-window; }
+// spawna o lançador de aplicativos (aquele bem de larper)
+alt+space { spawn-sh "noctalia msg panel-toggle launcher"; }
+// sumonna o dolpin
+// mod+e { spawn-sh "dolphin"; }
+// sumonna o brave
+mod+b { spawn "brave-origin"; }
+//
+mod+d { spawn "discord"; }
+}
