@@ -24,6 +24,14 @@ position x=0 y=0
 //transform caralho:
 transform "normal"
 }
+/*
+// TELEVISÃO DA SALA
+output "HDMI-A-1"{
+mode "1920x1080@60.003"
+scale 2.0
+position x=0 y=1080
+transform "normal"
+*/
 output "HDMI-A-1"{
 mode "1024x768@75.029"
 scale 1.0
