@@ -46,8 +46,8 @@ mod+backspace { close-window; }
 alt+space { spawn-sh "noctalia msg panel-toggle launcher"; }
 // sumonna o dolpin
 // mod+e { spawn-sh "dolphin"; }
-// sumonna o brave
-mod+b { spawn "brave-origin"; }
+// sumonna o librewolf
+mod+b { spawn "librewolf"; }
 //
 mod+d { spawn "discord"; }
 }
