@@ -28,16 +28,21 @@ transform "normal"
 // TELEVISÃO DA SALA
 output "HDMI-A-1"{
 mode "1920x1080@60.003"
-scale 2.0
-position x=0 y=1080
+scale 1.5
+position x=0 y=-720 // y=720 pra scale = 1.5/ y=540 pra scale = 2.0 //// valor negativo pra tv encima/ e valor positivo pra tv embaixo
 transform "normal"
+}
 */
+//---------------------//
+
+//MONITOR DO QUARTO
 output "HDMI-A-1"{
 mode "1024x768@75.029"
 scale 1.0
 position x=-1024 y=0
 transform "normal"
 }
+
 // binds mano
 binds {
 //Define bind pra fechar um app
@@ -46,8 +51,8 @@ mod+backspace { close-window; }
 alt+space { spawn-sh "noctalia msg panel-toggle launcher"; }
 // sumonna o dolpin
 // mod+e { spawn-sh "dolphin"; }
-// sumonna o librewolf
-mod+b { spawn "librewolf"; }
-//
+// sumonna o browser
+mod+b { spawn "brave-origin"; }
+// summona o discord
 mod+d { spawn "discord"; }
 }
